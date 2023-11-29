@@ -1,6 +1,6 @@
 \def\verPreprint{1}
 \def\verPAPER{2}
-\def\ver{1}
+\def\ver{2}
 
 \ifx\ver\verPAPER
 % First comes an example EPS file -- just ignore it and
@@ -187,9 +187,9 @@ Tau; Polarimeter vector
 \end{frontmatter}
 \fi
 
-\ifx\ver\verPAPER
-\linenumbers
-\fi
+%\ifx\ver\verPAPER
+%\linenumbers
+%\fi
 
 \ifx\ver\verPAPER
 % All CPiP articles must contain the following
@@ -255,7 +255,8 @@ it is not possible to derive an analytic expression for $J$ based on theory.
 Instead, one needs to assume a model and then determine the parameters of the model by a fit to experimental data.
 Different models for the decay $\Pgt \to 3 \Pgp\Pgngt$ have been proposed~\cite{Bowler:1988kf,Isgur:1988vm,Kuhn:1990ad,Feindt:1990ev,Kuhn:1992nz,Ecker:1988te,Ecker:1989yg,Dumm:2009va} and fitted to data~\cite{ARGUS:1992olh,OPAL:1997was,DELPHI:1998bhv,Shekhovtsova:2012ra,Nugent:2013hxa}.
 Our algorithm is based on the fit performed by the CLEO collaboration to data recorded in the decay channel $\Pgtm \to \Pgpm\Pgpz\Pgpz\Pgngt$~\cite{CLEO:1999rzk}.
-The CLEO fit is the default hadronic current for the decay channels $\Pgtm \to \Pgpm\Pgpp\Pgpm\Pgngt$ and $\Pgtm \to \Pgpm\Pgpz\Pgpz\Pgngt$ in the Monte Carlo program \textsc{TAUOLA}~\cite{Jadach:1990mz}. 
+The CLEO fit is the default hadronic current for the decay channels $\Pgtm \to \Pgpm\Pgpp\Pgpm\Pgngt$ and $\Pgtm \to \Pgpm\Pgpz\Pgpz\Pgngt$ in the Monte Carlo (MC) program \textsc{TAUOLA}~\cite{Jadach:1990mz}
+and the program TauSpinner~\cite{Przedzinski:2018ett}. The latter allows to simulate different $\Pgt$ polarization and spin correlation states via MC reweighting.
 
 The fit includes seven resonances to model the substructure of the $\Pai$ decay and makes the following ansatz for the contribution of these resonances to the hadronic current:
 \begin{equation}
